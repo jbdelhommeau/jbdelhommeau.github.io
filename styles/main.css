@@ -1,0 +1,162 @@
+/*http://tympanus.net/Development/IconHoverEffects/*/
+
+body {
+    background: url(../images/background/bg-1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    padding-top: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.v-card {
+    position: relative;
+    width: 320px;
+    max-height: 600px;
+    margin: 0 auto;
+    
+    background: url(../images/bg-paper.jpg);
+
+    /*Border style*/
+    border: 8px solid #D64541;
+    text-align: center;
+    padding: 32px 0 16px;
+}
+
+.v-card .avatar{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 125px;
+    height: 125px;
+    border: 4px dashed #000;
+    border-radius: 125px;
+    overflow: hidden;
+}
+
+    .avatar img {
+        margin-top: -8px;
+        width: 100%;
+    }
+
+
+.wrap-line {
+    position: relative;
+    margin-top: 140px;
+    height: 20px;
+}
+
+    .wrap-line .line{
+        border-bottom: 2px dotted #D64541;
+        width: 50%;
+        position: absolute;
+    }
+
+        .wrap-line .line.r{
+            -webkit-transform: rotate(-10deg);
+            right: 0; 
+        }
+
+        .wrap-line .line.l{
+            -webkit-transform: rotate(10deg);
+            left: 0;
+        }
+
+    .wrap-line .pins{
+        position: absolute;
+        height: 36px;
+        width: 36px;
+        left: 0;
+        right: 0;
+        top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+
+        line-height: 30px;
+        font-size: 30px;
+        text-align: center;
+        color: #D64541;
+    }
+
+.about {
+    margin: 20px 10px ;
+}
+
+.about h3 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 32px;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.about p.tag {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.about p.tag a {
+    color: #D64541;
+}
+
+.links .fa {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    z-index: 1;
+    margin: 15px 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 0 2px #D64541;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+} 
+
+.links .fa:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.links .fa:before {
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: none;
+}
+
+.links .fa:after {
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    padding: 2px;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    background: #D64541;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.links .fa:hover:after {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+}
