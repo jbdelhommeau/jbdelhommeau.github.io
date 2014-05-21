@@ -67,24 +67,31 @@ body {
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
-    -webkit-transition: -webkit-transform 0.5s;
-    -moz-transition: -moz-transform 0.5s;
-    transition: transform 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    transition: transform 1s;
 }
 
     .v-card .wrap-avatar:hover .avatar {
-        -webkit-transform: rotateY( 180deg );
-        -moz-transform: rotateY( 180deg );
-        -ms-transform: rotateY( 180deg );
-        transform: rotateY( 180deg );
+        transform-origin: center center;
+        -webkit-transform: rotate(180deg) scaleX(-1.2) scaleY(-1.2);
+        -moz-transform: rotate(180deg) scaleX(-1.2) scaleY(-1.2);
+        -ms-transform: rotate(180deg) scaleX(-1.2) scaleY(-1.2);
+        transform: rotate(180deg) scaleX(-1.2) scaleY(-1.2);
     }
 
-    .avatar img {
+    .v-card .wrap-avatar .avatar img {
         margin-top: -8px;
         width: 100%;
+        opacity: 1;
+        -webkit-transition: opacity 0.5s 0s;
+        -moz-transition: opacity 0.5s 0s;
+        transition: opacity 0.5s 0s ;
     }
 
-    .avatar .emo {
+    .v-card .wrap-avatar .avatar .emo {
         position: absolute;
         top: -4px;
         left: -4px;
@@ -95,20 +102,16 @@ body {
         font-size: 125px;
         color: #fff;
         opacity: 0;
+        -webkit-transition: opacity 0.5s 0s;
+        -moz-transition: opacity 0.5s 0s;
+        transition: opacity 0.5s 0s ;
     }
 
-    .wrap-avatar .avatar img,
-    .wrap-avatar .avatar .emo {
-        -webkit-transition: opacity 1s 0.5s;
-        -moz-transition: opacity 1s 0.5s;
-        transition: opacity 1s 0.5s;
-    }
-
-    .wrap-avatar:hover .avatar img {
+    .v-card .wrap-avatar:hover .avatar img {
         opacity: 0;
     }
 
-    .wrap-avatar:hover .avatar .emo {
+    .v-card .wrap-avatar:hover .avatar .emo {
         opacity: 1;
     }
 
