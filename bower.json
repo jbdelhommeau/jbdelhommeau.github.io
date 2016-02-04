@@ -1,8 +1,0 @@
-{
-  "name": "Jean-Baptiste Delhommeau | V-card",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "~3.1.1",
-    "jquery": "~1.11.0"
-  }
-}

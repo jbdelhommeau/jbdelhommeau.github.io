@@ -10,7 +10,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
@@ -59,13 +59,9 @@
             ga('create','UA-51185119-1', 'jbdelhommeau.com');ga('send','pageview');
         </script>
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-       	<!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
         <script>
-        	$(function(){
         		var i = Math.floor((Math.random() * 4) + 1);
-        		$("body").css("background-image", "url('images/background/bg-"+ i +".jpg')");
-        	});
+            document.body.style.backgroundImage = "url('images/background/bg-"+ i +".jpg')";
         </script>
 
 </body>
