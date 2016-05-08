@@ -1,6 +1,6 @@
 /*http://tympanus.net/Development/IconHoverEffects/*/
 
-body {
+html {
     background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -223,11 +223,6 @@ body {
 
 
 @media (max-height: 516px) {
-  body {
-    position: relative;
-    width: auto;
-    height: auto;
-  }
   .v-card {
     margin: 10px auto;
   }
