@@ -8,11 +8,12 @@ html {
     background-size: cover;
 }
 
+body{
+  background-color: inherit;
+}
+
 .container {
     font-family: 'Source Sans Pro', sans-serif;
-    position: absolute;
-    width: 100%;
-    height: 100%;
 }
 
 .v-card {
@@ -26,6 +27,7 @@ html {
     height: 516px;
     border: 5px solid #D64541;
     background: url(../images/bg-paper.jpg);
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     padding: 32px 0 16px;
     -webkit-box-shadow: 0 10px 6px -6px #222;
@@ -225,5 +227,6 @@ html {
 @media (max-height: 516px) {
   .v-card {
     margin: 10px auto;
+    position: relative;
   }
 }
