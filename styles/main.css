@@ -1,23 +1,11 @@
 /*http://tympanus.net/Development/IconHoverEffects/*/
 
 body {
-    background: no-repeat center center fixed; 
+    background: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-
-@media (max-height: 516px) {
-  body {
-    position: relative;
-    width: auto;
-    height: auto;
-  }
-  .v-card {
-    margin: 10px;
-  }
 }
 
 .container {
@@ -231,4 +219,16 @@ body {
     -moz-transform: scale(0.85);
     -ms-transform: scale(0.85);
     transform: scale(0.85);
+}
+
+
+@media (max-height: 516px) {
+  body {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  .v-card {
+    margin: 10px auto;
+  }
 }
